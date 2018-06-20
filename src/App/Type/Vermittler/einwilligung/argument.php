@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Type;
+namespace Sumatra\Type;
 
 class Vermittler_einwilligung_argument
 {

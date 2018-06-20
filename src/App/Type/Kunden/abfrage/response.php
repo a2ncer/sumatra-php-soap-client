@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Type;
+namespace Sumatra\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -8,17 +8,17 @@ class Kunden_abfrage_response implements ResultInterface
 {
 
     /**
-     * @var \App\Type\kunde
+     * @var \Sumatra\Type\kunde
      */
     private $kunde;
 
     /**
-     * @var \App\Type\status
+     * @var \Sumatra\Type\status
      */
     private $status;
 
     /**
-     * @return \App\Type\kunde
+     * @return \Sumatra\Type\kunde
      */
     public function getKunde()
     {
@@ -26,7 +26,7 @@ class Kunden_abfrage_response implements ResultInterface
     }
 
     /**
-     * @param \App\Type\kunde $kunde
+     * @param \Sumatra\Type\kunde $kunde
      * @return Kunden_abfrage_response
      */
     public function withKunde($kunde)
@@ -38,7 +38,7 @@ class Kunden_abfrage_response implements ResultInterface
     }
 
     /**
-     * @return \App\Type\status
+     * @return \Sumatra\Type\status
      */
     public function getStatus()
     {
@@ -46,7 +46,7 @@ class Kunden_abfrage_response implements ResultInterface
     }
 
     /**
-     * @param \App\Type\status $status
+     * @param \Sumatra\Type\status $status
      * @return Kunden_abfrage_response
      */
     public function withStatus($status)

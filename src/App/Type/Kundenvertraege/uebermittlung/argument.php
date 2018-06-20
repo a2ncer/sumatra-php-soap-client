@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Type;
+namespace Sumatra\Type;
 
 class Kundenvertraege_uebermittlung_argument
 {
 
     /**
-     * @var \App\Type\vertrag
+     * @var \Sumatra\Type\vertrag
      */
     private $vertrag;
 
@@ -16,7 +16,7 @@ class Kundenvertraege_uebermittlung_argument
     private $kunde_winmakler_id;
 
     /**
-     * @return \App\Type\vertrag
+     * @return \Sumatra\Type\vertrag
      */
     public function getVertrag()
     {
@@ -24,7 +24,7 @@ class Kundenvertraege_uebermittlung_argument
     }
 
     /**
-     * @param \App\Type\vertrag $vertrag
+     * @param \Sumatra\Type\vertrag $vertrag
      * @return Kundenvertraege_uebermittlung_argument
      */
     public function withVertrag($vertrag)

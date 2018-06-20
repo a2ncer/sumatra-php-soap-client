@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace Sumatra;
 
 use Phpro\SoapClient\Middleware\Middleware;
 use Phpro\SoapClient\Xml\SoapXml;

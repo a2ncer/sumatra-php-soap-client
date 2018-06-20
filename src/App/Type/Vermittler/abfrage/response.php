@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Type;
+namespace Sumatra\Type;
 
 use Phpro\SoapClient\Type\ResultInterface;
 
@@ -8,17 +8,17 @@ class Vermittler_abfrage_response  implements ResultInterface
 {
 
     /**
-     * @var \App\Type\vermittler
+     * @var \Sumatra\Type\vermittler
      */
     private $vermittler;
 
     /**
-     * @var \App\Type\status
+     * @var \Sumatra\Type\status
      */
     private $status;
 
     /**
-     * @return \App\Type\vermittler
+     * @return \Sumatra\Type\vermittler
      */
     public function getVermittler()
     {
@@ -26,7 +26,7 @@ class Vermittler_abfrage_response  implements ResultInterface
     }
 
     /**
-     * @param \App\Type\vermittler $vermittler
+     * @param \Sumatra\Type\vermittler $vermittler
      * @return Vermittler_abfrage_response
      */
     public function withVermittler($vermittler)
@@ -38,7 +38,7 @@ class Vermittler_abfrage_response  implements ResultInterface
     }
 
     /**
-     * @return \App\Type\status
+     * @return \Sumatra\Type\status
      */
     public function getStatus()
     {
@@ -46,7 +46,7 @@ class Vermittler_abfrage_response  implements ResultInterface
     }
 
     /**
-     * @param \App\Type\status $status
+     * @param \Sumatra\Type\status $status
      * @return Vermittler_abfrage_response
      */
     public function withStatus($status)

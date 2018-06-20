@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Type;
+namespace Sumatra\Type;
 
 class Vermittler
 {
@@ -41,7 +41,7 @@ class Vermittler
     private $anrede;
 
     /**
-     * @var \App\Type\titel
+     * @var \Sumatra\Type\titel
      */
     private $titel;
 
@@ -76,7 +76,7 @@ class Vermittler
     private $webseite;
 
     /**
-     * @var \App\Type\person
+     * @var \Sumatra\Type\person
      */
     private $person;
 
@@ -111,7 +111,7 @@ class Vermittler
     private $gewerbe;
 
     /**
-     * @var \App\Type\gisa
+     * @var \Sumatra\Type\gisa
      */
     private $gisa;
 
@@ -331,7 +331,7 @@ class Vermittler
     }
 
     /**
-     * @return \App\Type\titel
+     * @return \Sumatra\Type\titel
      */
     public function getTitel()
     {
@@ -339,7 +339,7 @@ class Vermittler
     }
 
     /**
-     * @param \App\Type\titel $titel
+     * @param \Sumatra\Type\titel $titel
      * @return Vermittler
      */
     public function withTitel($titel)
@@ -471,7 +471,7 @@ class Vermittler
     }
 
     /**
-     * @return \App\Type\person
+     * @return \Sumatra\Type\person
      */
     public function getPerson()
     {
@@ -479,7 +479,7 @@ class Vermittler
     }
 
     /**
-     * @param \App\Type\person $person
+     * @param \Sumatra\Type\person $person
      * @return Vermittler
      */
     public function withPerson($person)
@@ -611,7 +611,7 @@ class Vermittler
     }
 
     /**
-     * @return \App\Type\gisa
+     * @return \Sumatra\Type\gisa
      */
     public function getGisa()
     {
@@ -619,7 +619,7 @@ class Vermittler
     }
 
     /**
-     * @param \App\Type\gisa $gisa
+     * @param \Sumatra\Type\gisa $gisa
      * @return Vermittler
      */
     public function withGisa($gisa)

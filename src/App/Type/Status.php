@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Type;
+namespace Sumatra\Type;
 
 class Status
 {
 
     /**
-     * @var \App\Type\integer
+     * @var \Sumatra\Type\integer
      */
     private $code;
 
@@ -16,7 +16,7 @@ class Status
     private $information;
 
     /**
-     * @return \App\Type\integer
+     * @return \Sumatra\Type\integer
      */
     public function getCode()
     {
@@ -24,7 +24,7 @@ class Status
     }
 
     /**
-     * @param \App\Type\integer $code
+     * @param \Sumatra\Type\integer $code
      * @return Status
      */
     public function withCode($code)

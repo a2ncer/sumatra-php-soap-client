@@ -1,8 +1,8 @@
 <?php
 
-namespace App;
+namespace Sumatra;
 
-use App\Type;
+use Sumatra\Type;
 use Phpro\SoapClient\Soap\ClassMap\ClassMapCollection;
 use Phpro\SoapClient\Soap\ClassMap\ClassMap;
 

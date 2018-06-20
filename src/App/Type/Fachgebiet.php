@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Type;
+namespace Sumatra\Type;
 
 class Fachgebiet
 {
@@ -11,7 +11,7 @@ class Fachgebiet
     private $sumatra_id;
 
     /**
-     * @var \App\Type\integer
+     * @var \Sumatra\Type\integer
      */
     private $winmakler_id;
 
@@ -41,7 +41,7 @@ class Fachgebiet
     }
 
     /**
-     * @return \App\Type\integer
+     * @return \Sumatra\Type\integer
      */
     public function getWinmakler_id()
     {
@@ -49,7 +49,7 @@ class Fachgebiet
     }
 
     /**
-     * @param \App\Type\integer $winmakler_id
+     * @param \Sumatra\Type\integer $winmakler_id
      * @return Fachgebiet
      */
     public function withWinmakler_id($winmakler_id)

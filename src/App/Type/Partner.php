@@ -1,12 +1,12 @@
 <?php
 
-namespace App\Type;
+namespace Sumatra\Type;
 
 class Partner
 {
 
     /**
-     * @var \App\Type\titel
+     * @var \Sumatra\Type\titel
      */
     private $titel;
 
@@ -71,7 +71,7 @@ class Partner
     private $beschaeftigt_bei;
 
     /**
-     * @return \App\Type\titel
+     * @return \Sumatra\Type\titel
      */
     public function getTitel()
     {
@@ -79,7 +79,7 @@ class Partner
     }
 
     /**
-     * @param \App\Type\titel $titel
+     * @param \Sumatra\Type\titel $titel
      * @return Partner
      */
     public function withTitel($titel)

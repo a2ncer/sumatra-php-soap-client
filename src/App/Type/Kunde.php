@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Type;
+namespace Sumatra\Type;
 
 class Kunde
 {
@@ -26,7 +26,7 @@ class Kunde
     private $beschaeftigt_bei;
 
     /**
-     * @var \App\Type\fachgebiet
+     * @var \Sumatra\Type\fachgebiet
      */
     private $fachgebiet;
 
@@ -36,7 +36,7 @@ class Kunde
     private $vermittler_id;
 
     /**
-     * @var \App\Type\titel
+     * @var \Sumatra\Type\titel
      */
     private $titel;
 
@@ -101,7 +101,7 @@ class Kunde
     private $arztnummer;
 
     /**
-     * @var \App\Type\aerztekammer
+     * @var \Sumatra\Type\aerztekammer
      */
     private $aerztekammer;
 
@@ -126,22 +126,22 @@ class Kunde
     private $svnummer;
 
     /**
-     * @var \App\Type\adresse
+     * @var \Sumatra\Type\adresse
      */
     private $adresse;
 
     /**
-     * @var \App\Type\kommunikation
+     * @var \Sumatra\Type\kommunikation
      */
     private $kommunikation;
 
     /**
-     * @var \App\Type\partner
+     * @var \Sumatra\Type\partner
      */
     private $partner;
 
     /**
-     * @var \App\Type\kind
+     * @var \Sumatra\Type\kind
      */
     private $kind;
 
@@ -236,7 +236,7 @@ class Kunde
     }
 
     /**
-     * @return \App\Type\fachgebiet
+     * @return \Sumatra\Type\fachgebiet
      */
     public function getFachgebiet()
     {
@@ -244,7 +244,7 @@ class Kunde
     }
 
     /**
-     * @param \App\Type\fachgebiet $fachgebiet
+     * @param \Sumatra\Type\fachgebiet $fachgebiet
      * @return Kunde
      */
     public function withFachgebiet($fachgebiet)
@@ -276,7 +276,7 @@ class Kunde
     }
 
     /**
-     * @return \App\Type\titel
+     * @return \Sumatra\Type\titel
      */
     public function getTitel()
     {
@@ -284,7 +284,7 @@ class Kunde
     }
 
     /**
-     * @param \App\Type\titel $titel
+     * @param \Sumatra\Type\titel $titel
      * @return Kunde
      */
     public function withTitel($titel)
@@ -536,7 +536,7 @@ class Kunde
     }
 
     /**
-     * @return \App\Type\aerztekammer
+     * @return \Sumatra\Type\aerztekammer
      */
     public function getAerztekammer()
     {
@@ -544,7 +544,7 @@ class Kunde
     }
 
     /**
-     * @param \App\Type\aerztekammer $aerztekammer
+     * @param \Sumatra\Type\aerztekammer $aerztekammer
      * @return Kunde
      */
     public function withAerztekammer($aerztekammer)
@@ -636,7 +636,7 @@ class Kunde
     }
 
     /**
-     * @return \App\Type\adresse
+     * @return \Sumatra\Type\adresse
      */
     public function getAdresse()
     {
@@ -644,7 +644,7 @@ class Kunde
     }
 
     /**
-     * @param \App\Type\adresse $adresse
+     * @param \Sumatra\Type\adresse $adresse
      * @return Kunde
      */
     public function withAdresse($adresse)
@@ -656,7 +656,7 @@ class Kunde
     }
 
     /**
-     * @return \App\Type\kommunikation
+     * @return \Sumatra\Type\kommunikation
      */
     public function getKommunikation()
     {
@@ -664,7 +664,7 @@ class Kunde
     }
 
     /**
-     * @param \App\Type\kommunikation $kommunikation
+     * @param \Sumatra\Type\kommunikation $kommunikation
      * @return Kunde
      */
     public function withKommunikation($kommunikation)
@@ -676,7 +676,7 @@ class Kunde
     }
 
     /**
-     * @return \App\Type\partner
+     * @return \Sumatra\Type\partner
      */
     public function getPartner()
     {
@@ -684,7 +684,7 @@ class Kunde
     }
 
     /**
-     * @param \App\Type\partner $partner
+     * @param \Sumatra\Type\partner $partner
      * @return Kunde
      */
     public function withPartner($partner)
@@ -696,7 +696,7 @@ class Kunde
     }
 
     /**
-     * @return \App\Type\kind
+     * @return \Sumatra\Type\kind
      */
     public function getKind()
     {
@@ -704,7 +704,7 @@ class Kunde
     }
 
     /**
-     * @param \App\Type\kind $kind
+     * @param \Sumatra\Type\kind $kind
      * @return Kunde
      */
     public function withKind($kind)
