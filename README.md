@@ -50,9 +50,12 @@ try {
 ### Development Setup
 
 ```bash
-composer install
+composer install --ignore-platform-reqs 
 docker-compose up -d
 docker-compose exec php bash
+apt-get update
+apt-get install libxml2-dev
+docker-php-ext-install soap
 php -S 0.0.0.0:80
 ```
 
