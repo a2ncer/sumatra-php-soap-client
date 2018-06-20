@@ -1,5 +1,18 @@
-<?php
+## SOAP Client for Sumatra
 
+### Development Setup
+
+```bash
+composer install
+docker-compose up -d
+docker-compose exec php bash
+php -S 0.0.0.0:80
+```
+
+
+### Usage 
+```php
+<?php
 include_once 'vendor/autoload.php';
 
 use App\SumatraClientFactory;
@@ -25,3 +38,7 @@ try {
 
     print $exception->getMessage();
 }
+
+```
+
+

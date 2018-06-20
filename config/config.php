@@ -1,7 +1,7 @@
 <?php
 
 return [
-    'wsdl' => '',
-    'username' => '',
-    'password' => '',
+    'wsdl' => 'https://example.com/sumatra.wsdl',
+    'username' => 'user',
+    'password' => 'pass',
 ];
