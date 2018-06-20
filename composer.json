@@ -1,6 +1,14 @@
 {
     "name": "a2ncer/sumatra-php-soap-client",
     "description": "Sumatra API SoapClient library",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Alex Vishnevsky",
+            "email": "a2ncer@gmail.com"
+        }
+    ],
     "require": {
         "php": ">7.1",
         "phpro/soap-client": "^0.7.3",

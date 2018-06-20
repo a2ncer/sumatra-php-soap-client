@@ -1,4 +1,7 @@
+[![Installs](https://img.shields.io/packagist/dt/phpro/soap-client.svg)](https://packagist.org/packages/phpro/soap-client/stats)
+[![Packagist](https://img.shields.io/packagist/v/phpro/soap-client.svg)](https://packagist.org/packages/phpro/soap-client)
 ## SOAP Client for Sumatra
+
 
 ### Development Setup
 
