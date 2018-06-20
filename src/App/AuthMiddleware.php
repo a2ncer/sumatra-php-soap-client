@@ -1,8 +1,6 @@
 <?php
 
-
 namespace App;
-
 
 use Phpro\SoapClient\Middleware\Middleware;
 use Phpro\SoapClient\Xml\SoapXml;
@@ -20,9 +18,11 @@ class AuthMiddleware extends Middleware
      */
     private $password;
 
-
     /**
      * AuthMiddleware constructor.
+     *
+     * @param string $username
+     * @param string $password
      */
     public function __construct(string $username, string $password)
     {
@@ -30,27 +30,36 @@ class AuthMiddleware extends Middleware
         $this->password = $password;
     }
 
+    /**
+     * @return string
+     */
     public function getName(): string
     {
         return 'auth_middleware';
     }
 
+    /**
+     * @param callable         $handler
+     * @param RequestInterface $request
+     *
+     * @return Promise
+     */
     public function beforeRequest(callable $handler, RequestInterface $request): Promise
     {
+        /** @var \Phpro\SoapClient\Xml\SoapXml $xml */
         $xml = SoapXml::fromStream($request->getBody());
 
         // Fetch specific elements:
+        /** @var string $namespace */
         $namespace = $xml->getSoapNamespaceUri();
 
         /** @var \DOMElement $header */
         $header = $xml->createSoapHeader();
 
-        $credentials = $xml->getXmlDocument()->createElementNS("security", "s:credentials");
+        $credentials = $xml->getXmlDocument()->createElementNS('security', 's:credentials');
 
-
-        $userName = $xml->getXmlDocument()->createElementNS($namespace, "sec:benutzername",$this->username );
-        $passWord = $xml->getXmlDocument()->createElementNS($namespace, "sec:kennwort",$this->password);
-
+        $userName = $xml->getXmlDocument()->createElementNS($namespace, 'sec:benutzername', $this->username);
+        $passWord = $xml->getXmlDocument()->createElementNS($namespace, 'sec:kennwort', $this->password);
 
         $credentials->appendChild($userName);
         $credentials->appendChild($passWord);
@@ -64,5 +73,4 @@ class AuthMiddleware extends Middleware
 
         return $handler($request);
     }
-
 }
