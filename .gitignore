@@ -2,3 +2,4 @@ vendor/
 .php_cs.cache
 composer.phar
 .idea/
+example.php
